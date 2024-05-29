@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color changing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+        }
+        .box{
+            width: 500px;
+            height: 150px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: beige;
+            border: 2px solid #000;
+            box-shadow: 0 0 25px #000;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: monospace;
+            letter-spacing: 1px;
+        }
+        .btn{
+            width: 90%;
+            height: 45px;
+            padding: 5px;
+            background-color: black;
+            color: aliceblue;
+            font-weight: 700;
+            font-size: 30px;
+            text-decoration: 1px solid #fff underline;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 id="colorcode">#fff</h1>
+        <button class="btn" id="btn">click me</button>
+    </div>
+    <script src="color-generation.js"></script>
+</body>
+</html>
